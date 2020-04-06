@@ -1,0 +1,45 @@
+body {
+    background-color: whitesmoke;
+}
+
+.box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navBox {
+    display: flex;
+    font-size: 20px;
+    background-color: white;
+}
+
+.navBox a {
+    color: black;
+}
+
+.navBox .navLi {
+    float: left;
+    margin-left: 30px;
+}
+
+.allcard {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allcard .card{
+    width: 19%;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.allcard .card img {
+    width: 100%;
+}
+
+.allcard .card div {
+    width: 180px;
+    margin-left: 30px;
+}
