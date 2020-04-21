@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./less/index.css">
+</head>
+
+<body>
+    <div class="box">
+        <ul class="list">
+            <li>
+                <img src="./image/5e9577fb14fdc.jpg" alt="">
+            </li>
+            <li>
+                <img src="./image/5e9577fa39af7.jpg" alt="">
+            </li>
+            <li>
+                <img src="./image/5e9577ff54f8d.jpg" alt="">
+            </li>
+            <li>
+                <img src="./image/5e957801712d5.jpg" alt="">
+            </li>
+            <li>
+                <img src="./image/56d014f68a723.jpg" alt="">
+            </li>
+            <li>
+                <img src="./image/5e9577fb14fdc.jpg" alt="">
+            </li>
+        </ul>
+        <div class="btn_box">
+            <div class="left_btn">&lt</div>
+            <div class="right_btn">&gt</div>
+
+        </div>
+    </div>
+
+    <script>
+        let box = document.querySelector('.box');
+        let ul = document.querySelector('ul');
+        let li = document.querySelectorAll('li')
+        let left_btn = document.querySelector('.left_btn');
+        let right_btn = document.querySelector('.right_btn')
+        let start = 0;
+        let timer = null;
+
+        function move() {
+            timer = setInterval(() => {
+                start -= 600;
+                if (start < -3000) {
+                    start = 0;
+                    ul.style.transition = 'none';
+                    ul.style.transform = `translateX(${start}px)`;
+
+                    let l = ul.offsetHeight;
+                    start = -600;
+                    ul.style.transition = 'all 0.3s';
+                } else {
+                    ul.style.transition = 'all 0.3s';
+                }
+                ul.style.transform = `translateX(${start}px)`;
+            }, 1500);
+        }
+        move();
+
+        right_btn.onclick = function () {
+            start -= 600;
+            if (start < -3000) {
+                start = 0;
+                ul.style.transition = 'none';
+                ul.style.transform = `translateX(${start}px)`;
+
+                let l = ul.offsetHeight;
+                start = -600;
+                ul.style.transition = 'all 0.3s';
+            } else {
+                ul.style.transition = 'all 0.3s';
+            }
+            ul.style.transform = `translateX(${start}px)`;
+        }
+
+        left_btn.onclick = function () {
+            start += 600;
+            if (start < -3000) {
+                start = 0;
+                ul.style.transition = 'none';
+                ul.style.transform = `translateX(${start}px)`;
+
+                let l = ul.offsetHeight;
+                start = -600;
+                ul.style.transition = 'all 0.3s';
+            } else {
+                ul.style.transition = 'all 0.3s';
+            }
+            ul.style.transform = `translateX(${start}px)`;
+        }
+
+
+        box.onmouseenter = function () {
+            clearInterval(timer);
+        }
+
+        box.onmouseleave = function () {
+            move();
+        }
+    </script>
+</body>
+
+</html>
