@@ -33,10 +33,10 @@
 
     <script>
         boxL.onmousemove = function (e) {
-            // boxR.style.cssText = `display:block;left:${e.clientX}px;top:${e.clientY}px;`;
-            boxR.style.left = e.clientX + 'px';
+            boxR.style.cssText = `display:block;left:${e.clientX}px;top:${e.clientY}px;`;
+            /* boxR.style.left = e.clientX + 'px';
             boxR.style.top = e.clientY + 'px';
-            boxR.style.display = 'block';
+            boxR.style.display = 'block'; */
         }
         boxL.onmouseleave = function () {
             boxR.style.display = 'none'
