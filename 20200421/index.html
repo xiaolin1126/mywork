@@ -1,111 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./less/index.css">
+	<meta charset="UTF-8">
+	<title>渐隐渐显轮播图</title>
+	<!-- IMPORT CSS -->
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <div class="box">
-        <ul class="list">
-            <li>
-                <img src="./image/5e9577fb14fdc.jpg" alt="">
-            </li>
-            <li>
-                <img src="./image/5e9577fa39af7.jpg" alt="">
-            </li>
-            <li>
-                <img src="./image/5e9577ff54f8d.jpg" alt="">
-            </li>
-            <li>
-                <img src="./image/5e957801712d5.jpg" alt="">
-            </li>
-            <li>
-                <img src="./image/56d014f68a723.jpg" alt="">
-            </li>
-            <li>
-                <img src="./image/5e9577fb14fdc.jpg" alt="">
-            </li>
-        </ul>
-        <div class="btn_box">
-            <div class="left_btn">&lt</div>
-            <div class="right_btn">&gt</div>
+	<!-- 轮播图容器 -->
+	<div class="container">
+		<!-- WRAPPER存放所有的图 -->
+		<div class="wrapper">
+			<!-- SLIDER每一个轮播图 -->
+			<div class="slider">
+				<img src="images/banner01.png" alt="">
+			</div>
+			<div class="slider">
+				<img src="images/banner02.png" alt="">
+			</div>
+			<div class="slider">
+				<img src="images/banner03.jpg" alt="">
+			</div>
+			<div class="slider">
+				<img src="images/banner04.png" alt="">
+			</div>
 
-        </div>
-    </div>
+		<!-- PAGENATION分页器 -->
+		<ul class="pagination">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 
-    <script>
-        let box = document.querySelector('.box');
-        let ul = document.querySelector('ul');
-        let li = document.querySelectorAll('li')
-        let left_btn = document.querySelector('.left_btn');
-        let right_btn = document.querySelector('.right_btn')
-        let start = 0;
-        let timer = null;
+		<!-- 左右按钮 -->
+		<a href="javascript:;" class="arrow changeLeft"></a>
+		<a href="javascript:;" class="arrow changeRight"></a>
+	</div>
 
-        function move() {
-            timer = setInterval(() => {
-                start -= 600;
-                if (start < -3000) {
-                    start = 0;
-                    ul.style.transition = 'none';
-                    ul.style.transform = `translateX(${start}px)`;
-
-                    let l = ul.offsetHeight;
-                    start = -600;
-                    ul.style.transition = 'all 0.3s';
-                } else {
-                    ul.style.transition = 'all 0.3s';
-                }
-                ul.style.transform = `translateX(${start}px)`;
-            }, 1500);
-        }
-        move();
-
-        right_btn.onclick = function () {
-            start -= 600;
-            if (start < -3000) {
-                start = 0;
-                ul.style.transition = 'none';
-                ul.style.transform = `translateX(${start}px)`;
-
-                let l = ul.offsetHeight;
-                start = -600;
-                ul.style.transition = 'all 0.3s';
-            } else {
-                ul.style.transition = 'all 0.3s';
-            }
-            ul.style.transform = `translateX(${start}px)`;
-        }
-
-        left_btn.onclick = function () {
-            start += 600;
-            if (start < -3000) {
-                start = 0;
-                ul.style.transition = 'none';
-                ul.style.transform = `translateX(${start}px)`;
-
-                let l = ul.offsetHeight;
-                start = -600;
-                ul.style.transition = 'all 0.3s';
-            } else {
-                ul.style.transition = 'all 0.3s';
-            }
-            ul.style.transform = `translateX(${start}px)`;
-        }
-
-
-        box.onmouseenter = function () {
-            clearInterval(timer);
-        }
-
-        box.onmouseleave = function () {
-            move();
-        }
-    </script>
+	<!-- IMPORT JS -->
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
