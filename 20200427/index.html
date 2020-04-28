@@ -32,11 +32,16 @@
     <div id='boxR'><img src="./timg.jpg" alt=""></div>
 
     <script>
-        boxL.onmousemove = function (e) {
-            boxR.style.cssText = `display:block;left:${e.clientX}px;top:${e.clientY}px;`;
-            /* boxR.style.left = e.clientX + 'px';
-            boxR.style.top = e.clientY + 'px';
-            boxR.style.display = 'block'; */
+        let boxL = document.getElementById('boxL');
+        let boxR = document.querySelector('#boxR');
+        
+        boxL.onmouseenter = function () {
+            boxR.style.display = 'block';         
+        }
+
+        boxL.onmousemove=function(e){
+            boxR.style.left = e.clientX + 10 + 'px';
+            boxR.style.top = e.clientY + 10 + 'px';
         }
         boxL.onmouseleave = function () {
             boxR.style.display = 'none'
