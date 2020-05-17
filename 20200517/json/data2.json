@@ -1,0 +1,47 @@
+[
+    {
+        "title": "北欧神话绝美初夏",
+        "title2": "欢乐时光伴我行",
+        "pic1":"images/down/down1.png",
+        "pic2":"images/down/down2.png",
+        "pic3":"images/down/down4.png",
+        "pic4":"images/down/down5.png",
+        "giftTime": "截至到6月1号"        
+    },
+    {
+        "title": "4月新手礼包",
+        "title2": "新人首充礼包",
+        "pic1":"images/down/down5.png",
+        "pic2":"images/down/down2.png",
+        "pic3":"images/down/down4.png",
+        "pic4":"images/down/down1.png",
+        "giftTime": "截至到7月1号"        
+    },
+    {
+        "title": "周长地下城变更",
+        "title2": "周长地下城活动",
+        "pic1":"images/down/down4.png",
+        "pic2":"images/down/down2.png",
+        "pic3":"images/down/down1.png",
+        "pic4":"images/down/down5.png",
+        "giftTime": "截至到8月1号"      
+    },
+    {
+        "title": "蓝色之恋告白礼盒",
+        "title2": "商城大改版",
+        "pic1":"images/down/down1.png",
+        "pic2":"images/down/down5.png",
+        "pic3":"images/down/down4.png",
+        "pic4":"images/down/down2.png",
+        "giftTime": "截至到9月1号"        
+    },
+    {
+        "title": "动漫活动大集锦",
+        "title2": "管家专属福利",
+        "pic1":"images/down/down2.png",
+        "pic2":"images/down/down5.png",
+        "pic3":"images/down/down4.png",
+        "pic4":"images/down/down1.png",
+        "giftTime": "截至到7月1号"        
+    }
+]

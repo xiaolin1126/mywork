@@ -1,0 +1,1409 @@
+.head {
+    background: url(../images/big/afe43d71b66d55a940f8e1b95f5e4cae.jpeg) no-repeat center 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    // position: relative;
+}
+
+// ==========导航=========
+.navBox {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    height: 400px;
+    overflow: hidden;
+
+
+    .navMain {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        float: left;
+        margin-top: 20px;
+
+        a {
+            display: inline-block;
+            background: url(../images/sprite.png) no-repeat 0 0;
+            width: 217px;
+            height: 126px;
+        }
+    }
+
+    .navList {
+        display: flex;
+        // position: relative;
+
+    }
+
+    .navList>div {
+        width: 300px;
+        padding-top: 50px;
+
+        h2 {
+            cursor: pointer;
+            color: white;
+            padding-bottom: 30px;
+        }
+    }
+
+    .navList>div>div {
+        font-size: 14px;
+        display: none;
+
+
+        a {
+            color: white;
+            line-height: 30px;
+        }
+    }
+
+    .navList:hover div {
+        display: block;
+    }
+
+    .navList div h2:hover {
+        color: #ec4828;
+    }
+
+    .navList div a:hover {
+        color: #ec4828;
+    }
+
+    .details {
+        width: 700px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0);
+        margin: 0 auto;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// ===========banner=========
+.bannerBox {
+    .banMain {
+        display: flex;
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    // 下载区域
+    .banDown {
+
+        .banBg1 {
+            .em1 {
+                display: inline-block;
+                background: url(../images/bg-sider-top.png) no-repeat 0 0;
+                width: 300px;
+                height: 155px;
+            }
+        }
+
+        .banBg2 {
+            margin-top: -3px;
+
+            .em2 {
+                display: inline-block;
+                background: url(../images/bg-sider-top.png) no-repeat 0 -155px;
+                width: 300px;
+                height: 137px;
+            }
+        }
+
+        .banBg3 {
+            margin-top: -5px;
+
+            .em3 {
+                display: inline-block;
+                background: url(../images/bg-sider-top.png) no-repeat 0 -290px;
+                width: 300px;
+                height: 55px;
+            }
+        }
+
+        .banBg4 {
+            margin-top: -5px;
+
+            .em4 {
+                display: inline-block;
+                background: url(../images/bg-sider-top.png) no-repeat 0 -340px;
+                width: 300px;
+                height: 95px;
+            }
+        }
+    }
+
+    // 北欧神话
+    .nordic {
+        background: url(../images/big/e96e78b043e445371b365d24d782c33c.jpeg) no-repeat;
+        height: 430px;
+        width: 343px;
+        margin-top: 8px;
+
+        .norBg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            height: 100%;
+            width: 100%;
+
+            .norSize {
+                width: 180px;
+                margin: 0 auto;
+                padding-top: 200px;
+                color: white;
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .norLook {
+                width: 140px;
+                height: 36px;
+                margin: 50px auto;
+                text-align: center;
+                line-height: 36px;
+                color: #af3b26;
+
+                i {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -372px -126px;
+                    width: 24px;
+                    height: 24px;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .nordic:hover .norLook {
+        background-color: #ec4828;
+        color: white;
+    }
+
+    .nordic:hover .norLook i {
+        display: inline-block;
+        background: url(../images/sprite.png) no-repeat -399px -126px;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    // 轮播图
+    .runBox {
+        box-sizing: border-box;
+        position: relative;
+        width: 343px;
+        height: 430px;
+        // background-color: aqua;
+        margin-top: 8px;
+        overflow: hidden;
+
+        :hover {
+            cursor: pointer;
+        }
+
+        .runImg {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1372px;
+            height: 100%;
+            display: flex;
+            transition: left .3s linear 0s;
+
+            .slide {
+                box-sizing: border-box;
+                width: 343px;
+                height: 430px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            font-size: 0;
+
+            ul {
+                li {
+                    background-color: lightcoral;
+                    width: 20px;
+                    height: 6px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    border-radius: 5px;
+
+                }
+
+                .active {
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    // 公告新闻
+    .banNews {
+        box-sizing: border-box;
+        width: 480px;
+        height: 430px;
+        background-color: white;
+        margin-top: 8px;
+        // overflow: hidden;
+
+        .newsMain {
+            width: 420px;
+            margin: 0 auto;
+        }
+
+        // 头部选项
+        .newsHead {
+            display: flex;
+            border-bottom: 1px solid #f0f0f0;
+            line-height: 60px;
+
+            li {
+                font-size: 17px;
+                font-weight: bolder;
+                color: #555555;
+                width: 80px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .newsList {
+                color: #ec4828;
+            }
+        }
+
+        // 卡片内容
+        .allcard {
+            margin-top: 20px;
+
+            .card {
+                display: block;
+            }
+
+            div {
+                display: none;
+
+                h4 {
+                    background-color: #f0f0f0;
+                    width: 100%;
+                    line-height: 40px;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #555555;
+                }
+
+                li {
+                    margin-top: 20px;
+
+                    span {
+                        display: inline-block;
+                        text-align: center;
+                        width: 50px;
+                        height: 20px;
+                        background-color: #f0f0f0;
+                        margin-right: 10px;
+                        font-size: 14px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        // 更多资讯
+        .moreNews {
+            width: 100%;
+            height: 40px;
+            border: 2px solid #f0f0f0;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 25px;
+
+            a {
+                color: #555555;
+            }
+
+            .b1 {
+                display: inline-block;
+                background: url(../images/sprite.png) no-repeat -299px -10px;
+                width: 16px;
+                height: 19px;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+// =========活动中心=========
+.contentBox {
+    background-color: #f0f0f0;
+    margin-top: 40px;
+    overflow: hidden;
+
+    // 后边所有内容版心
+    .conMain {
+        width: 96%;
+        margin: 0 auto;
+        display: flex;
+
+        //左边活动入口 
+        .giftLeft {
+            height: 467px;
+            width: 240px;
+            border: 6px solid #bbbbbb;
+            background-color: white;
+
+            h5 {
+                color: #3e5566;
+                font-size: 19px;
+                text-align: center;
+                border-bottom: 1px solid #f0f0f0;
+                margin: 0 44px;
+                font-weight: bold;
+                height: 36px;
+                line-height: 36px;
+                padding-top: 20px;
+            }
+
+            .giftLeftUp {
+                // height: 200px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                padding: 0 15px;
+
+                div {
+                    width: 70px;
+                    margin-top: 20px;
+                    // height: 51px;
+                    text-align: center;
+
+                    .em10 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat 0 -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+
+                    p {
+                        color: #8b9298;
+                    }
+                }
+
+                div {
+                    .em11 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -31px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+                div {
+                    .em12 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -62px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+                div {
+                    .em13 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -93px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+                div {
+                    .em14 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -124px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+            }
+
+            .giftLeftDn {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                padding: 0 15px;
+
+                div {
+                    width: 70px;
+                    margin-top: 20px;
+                    text-align: center;
+
+                    // background-color: lightcoral;
+                    .em15 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -186px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+
+                    p {
+                        color: #8b9298;
+                    }
+                }
+
+                div {
+                    .em16 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -217px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+                div {
+                    .em17 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -248px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+                div {
+                    .em18 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -279px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+                div {
+                    .em19 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -310px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+
+                div {
+                    .em20 {
+                        display: inline-block;
+                        background: url(../images/sprite.png) no-repeat -341px -182px;
+                        width: 31px;
+                        height: 30px;
+                    }
+                }
+            }
+
+            .giftLeftUp div:hover {
+                .em10 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat 0 -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em11 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -31px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em12 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -62px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em13 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -93px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em14 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -124px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+            }
+
+            .giftLeftDn div:hover {
+                .em15 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -186px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em16 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -217px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em17 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -248px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em18 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -279px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em19 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -310px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+
+                .em20 {
+                    display: inline-block;
+                    background: url(../images/sprite.png) no-repeat -341px -212px;
+                    width: 31px;
+                    height: 30px;
+                }
+            }
+
+            .giftLeftUp div:hover p,
+            .giftLeftDn div:hover p {
+                color: #ec4828;
+            }
+        }
+
+        // 中间活动中心
+        .giftCenter {
+            width: 686px;
+            margin-left: 40px;
+            // background-color: lightcoral;
+
+            .giftCenHead {
+                box-sizing: border-box;
+                padding: 25px 20px 20px 25px;
+                border-bottom: 1px solid #bbbbbb;
+
+                h2 {
+                    color: #49657a;
+                    font-size: 24px;
+                }
+            }
+
+            .giftCenUp {
+                position: relative;
+                display: flex;
+
+                li {
+                    width: 138px;
+                    text-align: center;
+                    line-height: 60px;
+                    color: #555555;
+                    font-size: 17px;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                }
+
+                .giftList {
+                    color: #ec4828;
+                }
+
+            }
+
+            .giftCenMid {
+                ul {
+                    display: flex;
+
+                    // margin-top: 15px;
+                    li {
+                        font-size: 16px;
+                        font-weight: bold;
+                        width: 180px;
+                        text-align: center;
+                        line-height: 40px;
+                        color: #555555;
+                        background-color: white;
+                    }
+                }
+            }
+
+            .giftCenDn {
+                width: 100%;
+                height: 252px;
+                overflow: hidden;
+
+                .giftAllCard {
+                    width: 100%;
+                    height: 100%;
+
+                    .giftCard {
+                        display: block;
+                    }
+
+                    ul {
+                        display: none;
+
+                        li {
+                            display: flex;
+                            font-size: 0;
+                            margin-top: 4px;
+                            border-bottom: 1px dashed #bbbbbb;
+                            padding: 10px 0;
+                            text-align: center;
+
+                            h3 {
+                                width: 172px;
+                                margin-right: 30px;
+
+                                a {
+                                    color: #555;
+                                }
+
+                            }
+
+                            h3:hover a {
+                                color: #ec4828;
+                            }
+
+                            p {
+                                margin: 0 30px;
+                                color: #ec4828;
+                                width: 172px;
+                                font-size: 16px;
+                            }
+
+                            .em40 {
+                                margin-left: 40px;
+                                display: inline-block;
+                                background: url(../images/sprite.png) no-repeat -486px 0;
+                                width: 55px;
+                                height: 25px;
+                            }
+
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
+        // 右边热门活动
+        .giftRight {
+            box-sizing: border-box;
+            width: 420px;
+            height: 480px;
+            // background-color: salmon;
+            margin-left: 40px;
+
+            h3 {
+                color: #49657a;
+                font-size: 24px;
+                padding: 25px 20px 20px 25px;
+            }
+
+            ul {
+
+                // margin-top: 20px;
+                li {
+                    margin-bottom: 30px;
+                }
+            }
+
+        }
+    }
+}
+
+// =========游戏攻略==========
+.dataBox {
+    // margin-bottom: 500px;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+
+    // 左边新手指南
+    .dataLeft {
+        width: 404px;
+        height: 400px;
+        margin: 35px 0 0 -122px;
+        position: relative;
+
+        .dataBg {
+            width: 404px;
+            height: 400px;
+            // background-color: salmon;
+
+            .em41 {
+                display: block;
+                background: url(../images/big/bg-sider-quick.png) no-repeat;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .dataBgUp {
+            position: absolute;
+            top: 50px;
+            left: 185px;
+
+            li {
+                p {
+                    line-height: 60px;
+                    // height: 60px;
+                    width: 220px;
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: #ffc39e;
+                    cursor: pointer;
+                    // background-color: lightpink;
+                }
+            }
+
+            p:hover {
+                color: white;
+            }
+
+            li:hover div {
+                display: block;
+            }
+
+            .dataBgDn {
+                z-index: 1;
+                display: none;
+                width: 700px;
+                height: 195px;
+                background-color: white;
+                border: 1px solid whitesmoke;
+                box-shadow: 1px 1px 5px 1px rgba(192, 192, 192, 0.5);
+                border-radius: 5px;
+                position: absolute;
+                top: -22px;
+                left: 218px;
+                padding: 40px 30px;
+
+                .dataBgDnDis {
+                    display: flex;
+
+                    a {
+                        color: #49657a;
+                        margin-right: 20px;
+                        text-align: center;
+
+                        .em51 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -460px 0;
+                            width: 41px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+
+                        .em52 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -501px 0;
+                            width: 33px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+
+                        .em53 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -638px 0;
+                            width: 33px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+
+                        .em54 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -670px 0;
+                            width: 31px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+
+                        .em55 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -501px 0;
+                            width: 33px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+
+                        .em56 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -501px 0;
+                            width: 33px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+
+                        .em57 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -368px -62px;
+                            width: 38px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+
+                        .em58 {
+                            display: block;
+                            background: url(../images/sprite-icon.png) no-repeat -406px -64px;
+                            width: 33px;
+                            height: 30px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    // 中间视频攻略
+    .dataVideo {
+        width: 686px;
+        background: linear-gradient(rgba(255, 255, 255), rgba(240, 240, 240, 1));
+        margin: 30px 0 0 40px;
+
+        .datVidHead {
+            box-sizing: border-box;
+            padding: 25px 20px 20px 25px;
+            border-bottom: 1px solid #bbbbbb;
+
+            h3 {
+                color: #49657a;
+                font-size: 24px;
+            }
+        }
+
+        div {
+            margin-top: 10px;
+
+            .datVidUp {
+                display: flex;
+
+                li {
+                    cursor: pointer;
+                    width: 138px;
+                    text-align: center;
+                    line-height: 60px;
+                    color: #555555;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+
+                .dataList {
+                    color: #ec4828;
+                }
+
+            }
+        }
+
+        .datVidDn {
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 40px;
+
+            .dataCard {
+                display: block;
+            }
+
+            ul {
+                // float: left;
+                display: none;
+
+                li {
+                    float: left;
+
+                    .videoBg,
+                    .videoBg2 {
+                        background: url(../images/big/shipin1.jpg) no-repeat;
+                        background-size: 100% 100%;
+                        width: 272px;
+                        height: 151px;
+                        margin-left: 20px;
+                        position: relative;
+
+                        .video1 {
+                            box-sizing: border-box;
+                            width: 100%;
+                            height: 100%;
+
+                            .emVideo {
+                                position: absolute;
+                                top: 60px;
+                                left: 120px;
+                                display: block;
+                                background: url(../images/sprite.png) no-repeat -446px -49px;
+                                width: 40px;
+                                height: 40px;
+
+                            }
+                        }
+
+                        .video1:hover {
+                            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                            border: 4px solid #ec4828;
+                        }
+
+                        .video1:hover .emVideo {
+                            background: url(../images/sprite.png) no-repeat -487px -49px;
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    p {
+                        font-size: 16px;
+                        margin-top: 10px;
+                        margin-left: 20px;
+
+                        a {
+                            color: #555;
+                        }
+                    }
+
+                    .videoBg2 {
+                        background: url(../images/big/shipin2.jpg) no-repeat;
+                        background-size: 100% 100%;
+                        width: 272px;
+                        height: 151px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    // 右边图文推荐
+    .dataRight {
+        box-sizing: border-box;
+        width: 420px;
+        height: 370px;
+        margin-left: 40px;
+        margin-top: 30px;
+        // background-color: darksalmon;
+
+        h3 {
+            color: #49657a;
+            font-size: 24px;
+            padding: 25px 20px 20px 25px;
+        }
+
+        ul {
+            li {
+                position: relative;
+                margin-bottom: 10px;
+
+                .emDataBg4 {
+                    display: block;
+                    background: url(../images/big/down1.jpg) no-repeat;
+                    width: 412px;
+                    height: 140px;
+                }
+
+                .emDataBg5 {
+                    display: block;
+                    background: url(../images/big/down2.jpg) no-repeat;
+                    width: 412px;
+                    height: 140px;
+                }
+
+                .emBgGo1 {
+                    position: absolute;
+                    top: 30px;
+                    left: 45px;
+
+                    h4 {
+                        color: #fff;
+                        font-size: 22px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: #b8b8b8;
+                        margin: 8px 0 14px;
+                    }
+
+                    .emDataGoBg {
+                        width: 62px;
+                        height: 20px;
+                        color: #ec4828;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 20px;
+                        border: 1px solid #ec4828;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// ==========游戏推广===========
+.mediaBox {
+    display: flex;
+    overflow: hidden;
+    // margin-bottom: 500px;
+
+    // 左边道具推荐
+    .mediaLeft {
+        width: 300px;
+        margin-top: 40px;
+        // background-color: lavenderblush;
+
+        h3 {
+            color: #3e5566;
+            font-size: 19px;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+            margin: 0 44px;
+            font-weight: bold;
+            height: 36px;
+            line-height: 36px;
+            padding-top: 20px;
+        }
+
+        .medLeftRes {
+            .medLeftResUp {
+                display: flex;
+                margin: 20px 44px;
+
+                .medEm1 {
+                    display: block;
+                    background: url(../images/number/10007473.jpg) no-repeat;
+                    background-size: 100% 100%;
+                    width: 67px;
+                    height: 67px;
+                }
+
+                .medEm2 {
+                    display: block;
+                    background: url(../images/number/36.jpg) no-repeat;
+                    background-size: 100% 100%;
+                    width: 67px;
+                    height: 67px;
+                }
+
+                .medResSize {
+                    margin-left: 20px;
+                    font-size: 14px;
+
+                    p {
+                        color: #ec4828;
+                        font-weight: bold;
+                    }
+
+                    a span {
+                        color: #fff;
+                        background-color: #e24122;
+                        display: block;
+                        width: 75px;
+                        height: 26px;
+                        line-height: 26px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    // 中间明星主播
+    .mediaCenter {
+        width: 686px;
+        // height: 600px;
+        // background-color: darksalmon;
+        margin: 20px 0 0 22px;
+
+        .medCenHead {
+            box-sizing: border-box;
+            padding: 25px 20px 0 25px;
+
+            h3 {
+                color: #49657a;
+                font-size: 24px;
+            }
+        }
+
+        .medCenDn {
+            display: flex;
+
+            .medCenDnBg {
+                margin: 20px 20px 0 0;
+
+                .medCenDnBg1 {
+                    display: block;
+                    background: url(../images/big/mingxing1.png) no-repeat;
+                    background-size: 100% 100%;
+                    width: 333px;
+                    height: 246px;
+                }
+
+                .medCenDnBg2 {
+                    display: block;
+                    background: url(../images/big/mingxing2.png) no-repeat;
+                    background-size: 100% 100%;
+                    width: 333px;
+                    height: 246px;
+                }
+            }
+        }
+    }
+
+    // 右边媒体推荐
+    .mediaRight {
+        // background-color: lightgreen;
+        width: 450px;
+        margin: 20px 0 0 40px;
+
+        h3 {
+            box-sizing: border-box;
+            padding: 25px 20px 0 25px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .medCenDnImg {
+            img {
+                margin-bottom: 10px;
+            }
+        }
+
+        .medCenDn {
+            margin-top: 20px;
+            display: flex;
+
+            .medCenDnSize {
+                p {
+                    margin-top: 10px;
+
+                    a {
+                        color: #555555;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .medCenDnBg20 {
+                margin: -47px 0 0 40px;
+
+                .medCenDnBg20Em {
+                    display: block;
+                    background: url(../images/big/bg-mt.png) no-repeat;
+                    width: 265px;
+                    height: 356px;
+                }
+            }
+        }
+    }
+}
+
+// ==========国创动画===========
+.animationBox {
+    display: flex;
+    margin-bottom: 100px;
+
+    // 左边国创动漫
+    .amtLeft {
+        margin: 45px 0 0 100px;
+
+        ul {
+            display: flex;
+
+            li {
+
+                .amtBg,
+                .amtBg2,
+                .amtBg3 {
+                    display: block;
+                    background: url(../images/big/bg_pp1.png) no-repeat;
+                    width: 286px;
+                    height: 268px;
+
+                    .amtBgSize {
+                        text-align: center;
+                        padding: 110px 0 5px 0px;
+                        color: #49657a;
+                        font-size: 24px;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+
+                .amtBg2 {
+                    display: block;
+                    background: url(../images/big/bg_pp2.png) no-repeat;
+                    width: 286px;
+                    height: 268px;
+                }
+
+                .amtBg3 {
+                    display: block;
+                    background: url(../images/big/bg_pp3.png) no-repeat;
+                    width: 286px;
+                    height: 268px;
+                }
+
+            }
+        }
+    }
+
+    // 右边版本留言
+    .amtRight {
+        margin-left: 70px;
+
+        .amtRightBg {
+            .amtRightBgEm {
+                display: block;
+                background: url(../images/big/bg-btn.png) no-repeat;
+                width: 420px;
+                height: 120px;
+            }
+
+            .amtRightBgEm2 {
+                display: block;
+                background: url(../images/big/bg-btn.png) no-repeat 0 -122px;
+                width: 420px;
+                height: 110px;
+                z-index: 1;
+                margin-top: -18px;
+            }
+
+            .amtRightBgEm3 {
+                display: block;
+                background: url(../images/big/bg-btn.png) no-repeat 0 -230px;
+                width: 420px;
+                height: 93px;
+                z-index: 2;
+                margin-top: -12px;
+            }
+
+            .amtRightBgEm:hover {
+                display: block;
+                background: url(../images/big/bg-btn-hover.png) no-repeat;
+                width: 420px;
+                height: 120px;
+            }
+
+            .amtRightBgEm2:hover {
+                display: block;
+                background: url(../images/big/bg-btn-hover.png) no-repeat 0 -122px;
+                width: 420px;
+                height: 110px;
+                z-index: 1;
+                margin-top: -18px;
+            }
+
+            .amtRightBgEm3:hover {
+                display: block;
+                background: url(../images/big/bg-btn-hover.png) no-repeat 0 -230px;
+                width: 420px;
+                height: 93px;
+                z-index: 2;
+                margin-top: -12px;
+            }
+
+
+        }
+
+    }
+}
+
+// ===========foot============
+.footBox {
+    width: 100%;
+    // margin-bottom: 600px;
+    background-color: #282725;
+
+    .footMain {
+        display: flex;
+        width: 950px;
+        margin: 0 auto;
+        // background-color: lightcoral;
+
+        .footBg {
+            width: 180px;
+            height: 35px;
+            padding-top: 30px;
+
+            .footBgEm {
+                display: block;
+                background: url(../images/big/foot-dark.png) no-repeat;
+                width: 180px;
+                height: 35px;
+            }
+        }
+
+        .footText {
+            margin: 20px;
+
+            ul {
+                display: flex;
+
+                li {
+                    padding: 1px 5px;
+
+                    a {
+                        color: #8c8c8c;
+                    }
+                }
+            }
+
+            p {
+                color: #8c8c8c;
+                padding-left: 5px;
+            }
+        }
+
+    }
+}
