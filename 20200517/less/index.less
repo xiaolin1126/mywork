@@ -281,17 +281,33 @@
             line-height: 60px;
 
             li {
+                position: relative;
                 font-size: 17px;
                 font-weight: bolder;
                 color: #555555;
                 width: 80px;
                 text-align: center;
                 cursor: pointer;
+                em {
+                    display: none;
+                    background: url(../images/sprite.png) no-repeat -305px 0;
+                    width: 81px;
+                    height: 11px;
+                    position: absolute;
+                    top: 56px;
+                    left: 5px;
+                }
+                .mark{
+                    display: block;
+                }
             }
 
             .newsList {
                 color: #ec4828;
             }
+
+            
+
         }
 
         // 卡片内容
@@ -908,7 +924,7 @@
     .dataVideo {
         width: 686px;
         background: linear-gradient(rgba(255, 255, 255), rgba(240, 240, 240, 1));
-        margin: 30px 0 0 40px;
+        margin: 20px 0 0 40px;
 
         .datVidHead {
             box-sizing: border-box;
@@ -961,7 +977,15 @@
                     float: left;
 
                     .videoBg,
-                    .videoBg2 {
+                    .videoBg2,
+                    .videoBg3,
+                    .videoBg4,
+                    .videoBg5,
+                    .videoBg6,
+                    .videoBg7,
+                    .videoBg8,
+                    .videoBg9,
+                    .videoBg10 {
                         background: url(../images/big/shipin1.jpg) no-repeat;
                         background-size: 100% 100%;
                         width: 272px;
@@ -1011,9 +1035,46 @@
                     .videoBg2 {
                         background: url(../images/big/shipin2.jpg) no-repeat;
                         background-size: 100% 100%;
-                        width: 272px;
-                        height: 151px;
-                        margin-left: 20px;
+                    }
+
+                    .videoBg3 {
+                        background: url(../images/big/shipin3.jpg) no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .videoBg4 {
+                        background: url(../images/big/shipin4.jpg) no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .videoBg5 {
+                        background: url(../images/big/shipin5.jpg) no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .videoBg6 {
+                        background: url(../images/big/shipin6.jpg) no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .videoBg7 {
+                        background: url(../images/big/shipin7.jpg) no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .videoBg8 {
+                        background: url(../images/big/shipin8.jpg) no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .videoBg9 {
+                        background: url(../images/big/shipin9.jpg) no-repeat;
+                        background-size: 100% 100%;
+                    }
+
+                    .videoBg10 {
+                        background: url(../images/big/shipin10.jpg) no-repeat;
+                        background-size: 100% 100%;
                     }
                 }
             }

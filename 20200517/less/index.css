@@ -217,12 +217,25 @@
   line-height: 60px;
 }
 .bannerBox .banNews .newsHead li {
+  position: relative;
   font-size: 17px;
   font-weight: bolder;
   color: #555555;
   width: 80px;
   text-align: center;
   cursor: pointer;
+}
+.bannerBox .banNews .newsHead li em {
+  display: none;
+  background: url(../images/sprite.png) no-repeat -305px 0;
+  width: 81px;
+  height: 11px;
+  position: absolute;
+  top: 56px;
+  left: 5px;
+}
+.bannerBox .banNews .newsHead li .mark {
+  display: block;
 }
 .bannerBox .banNews .newsHead .newsList {
   color: #ec4828;
@@ -696,7 +709,7 @@
 .dataBox .dataVideo {
   width: 686px;
   background: linear-gradient(rgba(255, 255, 255), #f0f0f0);
-  margin: 30px 0 0 40px;
+  margin: 20px 0 0 40px;
 }
 .dataBox .dataVideo .datVidHead {
   box-sizing: border-box;
@@ -740,7 +753,15 @@
   float: left;
 }
 .dataBox .dataVideo .datVidDn ul li .videoBg,
-.dataBox .dataVideo .datVidDn ul li .videoBg2 {
+.dataBox .dataVideo .datVidDn ul li .videoBg2,
+.dataBox .dataVideo .datVidDn ul li .videoBg3,
+.dataBox .dataVideo .datVidDn ul li .videoBg4,
+.dataBox .dataVideo .datVidDn ul li .videoBg5,
+.dataBox .dataVideo .datVidDn ul li .videoBg6,
+.dataBox .dataVideo .datVidDn ul li .videoBg7,
+.dataBox .dataVideo .datVidDn ul li .videoBg8,
+.dataBox .dataVideo .datVidDn ul li .videoBg9,
+.dataBox .dataVideo .datVidDn ul li .videoBg10 {
   background: url(../images/big/shipin1.jpg) no-repeat;
   background-size: 100% 100%;
   width: 272px;
@@ -749,13 +770,29 @@
   position: relative;
 }
 .dataBox .dataVideo .datVidDn ul li .videoBg .video1,
-.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1 {
+.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg3 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg4 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg5 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg6 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg7 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg8 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg9 .video1,
+.dataBox .dataVideo .datVidDn ul li .videoBg10 .video1 {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
 }
 .dataBox .dataVideo .datVidDn ul li .videoBg .video1 .emVideo,
-.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1 .emVideo {
+.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg3 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg4 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg5 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg6 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg7 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg8 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg9 .video1 .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg10 .video1 .emVideo {
   position: absolute;
   top: 60px;
   left: 120px;
@@ -765,12 +802,28 @@
   height: 40px;
 }
 .dataBox .dataVideo .datVidDn ul li .videoBg .video1:hover,
-.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1:hover {
+.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg3 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg4 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg5 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg6 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg7 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg8 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg9 .video1:hover,
+.dataBox .dataVideo .datVidDn ul li .videoBg10 .video1:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   border: 4px solid #ec4828;
 }
 .dataBox .dataVideo .datVidDn ul li .videoBg .video1:hover .emVideo,
-.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1:hover .emVideo {
+.dataBox .dataVideo .datVidDn ul li .videoBg2 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg3 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg4 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg5 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg6 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg7 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg8 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg9 .video1:hover .emVideo,
+.dataBox .dataVideo .datVidDn ul li .videoBg10 .video1:hover .emVideo {
   background: url(../images/sprite.png) no-repeat -487px -49px;
   width: 40px;
   height: 40px;
@@ -786,9 +839,38 @@
 .dataBox .dataVideo .datVidDn ul li .videoBg2 {
   background: url(../images/big/shipin2.jpg) no-repeat;
   background-size: 100% 100%;
-  width: 272px;
-  height: 151px;
-  margin-left: 20px;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg3 {
+  background: url(../images/big/shipin3.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg4 {
+  background: url(../images/big/shipin4.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg5 {
+  background: url(../images/big/shipin5.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg6 {
+  background: url(../images/big/shipin6.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg7 {
+  background: url(../images/big/shipin7.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg8 {
+  background: url(../images/big/shipin8.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg9 {
+  background: url(../images/big/shipin9.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.dataBox .dataVideo .datVidDn ul li .videoBg10 {
+  background: url(../images/big/shipin10.jpg) no-repeat;
+  background-size: 100% 100%;
 }
 .dataBox .dataRight {
   box-sizing: border-box;

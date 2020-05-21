@@ -62,11 +62,12 @@
 // banner选项卡
 let bannerModle = (function () {
     let newsHead = document.querySelector('.newsHead'),
-        newsList = newsHead.querySelectorAll('li');
+        newsList = newsHead.querySelectorAll('li'),
+        mark = newsHead.querySelectorAll('em');
     let allcard = document.querySelector('.allcard');
     let _data = null;
     let x = 0;
-    // console.log(newsList)
+    // console.log(mark)
 
     let queryData = function queryData() {
         let xhr = new XMLHttpRequest;
@@ -109,16 +110,21 @@ let bannerModle = (function () {
     let handle = function handle() {
         [...newsList].forEach((item, index) => {
             item.onmouseenter = function () {
-                console.log(item);
+                // console.log(item);
                 [...newsList].forEach((item) => {
                     item.className = ''
+
                 });
                 item.className = 'newsList';
+
+                [...mark].forEach((item) => {
+                    item.className = '';
+                });
+
                 x = index;
                 render();
-            }
+            };
         });
-
     }
     return {
         init() {
@@ -233,7 +239,7 @@ let mediaModle = (function () {
             }
         };
         xhr.send(null);
-        console.log(_data);
+        // console.log(_data);
     };
 
     // 模板拼接
