@@ -89,17 +89,28 @@ let bannerModle = (function () {
                 let {
                     title,
                     subtitle,
-                    con
+                    con1,
+                    con2,
+                    con3,
+                    con4,
+                    con5,
+                    con6,
+                    cardTime1,
+                    cardTime2,
+                    cardTime3,
+                    cardTime4,
+                    cardTime5,
+                    cardTime6
                 } = item;
                 str += `<div class="card">
                 <h4>${title}</h4>
                 <ul>
-                    <li><span>${subtitle}</span><a href="">${con}</a></li>
-                    <li><span>${subtitle}</span><a href="">${con}</a></li>
-                    <li><span>${subtitle}</span><a href="">${con}</a></li>
-                    <li><span>${subtitle}</span><a href="">${con}</a></li>
-                    <li><span>${subtitle}</span><a href="">${con}</a></li>
-                    <li><span>${subtitle}</span><a href="">${con}</a></li>
+                    <li><span>${subtitle}</span><a href="">${con1}</a><p>${cardTime1}</p></li>
+                    <li><span>${subtitle}</span><a href="">${con2}</a><p>${cardTime2}</p></li>
+                    <li><span>${subtitle}</span><a href="">${con3}</a><p>${cardTime3}</p></li>
+                    <li><span>${subtitle}</span><a href="">${con4}</a><p>${cardTime4}</p></li>
+                    <li><span>${subtitle}</span><a href="">${con5}</a><p>${cardTime5}</p></li>
+                    <li><span>${subtitle}</span><a href="">${con6}</a><p>${cardTime6}</p></li>
                 </ul>
             </div>`;
             }
@@ -109,6 +120,7 @@ let bannerModle = (function () {
     // 点击头部事件
     let handle = function handle() {
         [...newsList].forEach((item, index) => {
+            let y = index;
             item.onmouseenter = function () {
                 // console.log(item);
                 [...newsList].forEach((item) => {
@@ -117,8 +129,12 @@ let bannerModle = (function () {
                 });
                 item.className = 'newsList';
 
-                [...mark].forEach((item) => {
-                    item.className = '';
+                [...mark].forEach((item, index) => {
+                    if (index === y) {
+                        item.className = 'mark';
+                    } else {
+                        item.className = '';
+                    }
                 });
 
                 x = index;
@@ -140,7 +156,8 @@ bannerModle.init();
 // 活动中心选项卡
 let giftModle = (function () {
     let giftCenUp = document.querySelector('.giftCenUp'),
-        giftList = giftCenUp.querySelectorAll('li');
+        giftList = giftCenUp.querySelectorAll('li'),
+        giftMark = giftCenUp.querySelectorAll('em');
     let giftCard = document.querySelector('.giftCard');
     let _data = null;
     let x = 0;
@@ -201,11 +218,20 @@ let giftModle = (function () {
     // 点击头部事件
     let handle = function handle() {
         [...giftList].forEach((item, index) => {
+            let y = index;
             item.onclick = function () {
                 [...giftList].forEach((item) => {
                     item.className = ''
                 });
                 item.className = 'giftList';
+
+                [...giftMark].forEach((item, index) => {
+                    if (index === y) {
+                        item.className = 'giftMark';
+                    } else {
+                        item.className = '';
+                    }
+                });
                 x = index;
                 render();
             }
@@ -224,7 +250,8 @@ giftModle.init();
 // 媒体推荐选项卡
 let mediaModle = (function () {
     let datVidUp = document.querySelector('.datVidUp'),
-        dataList = datVidUp.querySelectorAll('li');
+        dataList = datVidUp.querySelectorAll('li'),
+        dataMark = datVidUp.querySelectorAll('em');
     let dataAllCard = document.querySelector('.dataAllCard');
     let _data = null;
     let x = 0;
@@ -286,12 +313,21 @@ let mediaModle = (function () {
     // 点击头部事件
     let handle = function handle() {
         [...dataList].forEach((item, index) => {
+            let y = index;
             item.onclick = function () {
-                console.log(item);
+                // console.log(item);
                 [...dataList].forEach((item) => {
                     item.className = ''
                 });
                 item.className = 'dataList';
+
+                [...dataMark].forEach((item, index) => {
+                    if (index === y) {
+                        item.className = 'dataMark';
+                    } else {
+                        item.className = '';
+                    }
+                });
                 x = index;
                 render();
             }

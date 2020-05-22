@@ -256,6 +256,10 @@
   font-size: 16px;
   text-align: center;
   color: #555555;
+  cursor: pointer;
+}
+.bannerBox .banNews .allcard div h4:hover {
+  color: #ec4828;
 }
 .bannerBox .banNews .allcard div li {
   margin-top: 20px;
@@ -272,6 +276,13 @@
 .bannerBox .banNews .allcard div li a {
   font-size: 14px;
   color: black;
+}
+.bannerBox .banNews .allcard div li p {
+  float: right;
+  font-size: 14px;
+}
+.bannerBox .banNews .allcard div li:hover a {
+  color: #ec4828;
 }
 .bannerBox .banNews .moreNews {
   width: 100%;
@@ -504,6 +515,7 @@
   display: flex;
 }
 .contentBox .conMain .giftCenter .giftCenUp li {
+  position: relative;
   width: 138px;
   text-align: center;
   line-height: 60px;
@@ -511,6 +523,18 @@
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
+}
+.contentBox .conMain .giftCenter .giftCenUp li em {
+  display: none;
+  background: url(../images/sprite.png) no-repeat -305px 0;
+  width: 81px;
+  height: 11px;
+  position: absolute;
+  top: -5px;
+  left: 32px;
+}
+.contentBox .conMain .giftCenter .giftCenUp li .giftMark {
+  display: block;
 }
 .contentBox .conMain .giftCenter .giftCenUp .giftList {
   color: #ec4828;
@@ -734,6 +758,19 @@
   color: #555555;
   font-size: 17px;
   font-weight: bold;
+  position: relative;
+}
+.dataBox .dataVideo div .datVidUp li em {
+  display: none;
+  background: url(../images/sprite.png) no-repeat -305px 0;
+  width: 81px;
+  height: 11px;
+  position: absolute;
+  top: -15px;
+  left: 32px;
+}
+.dataBox .dataVideo div .datVidUp li .dataMark {
+  display: block;
 }
 .dataBox .dataVideo div .datVidUp .dataList {
   color: #ec4828;

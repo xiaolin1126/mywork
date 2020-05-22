@@ -328,6 +328,10 @@
                     font-size: 16px;
                     text-align: center;
                     color: #555555;
+                    cursor: pointer;
+                }
+                h4:hover{
+                    color: #ec4828;
                 }
 
                 li {
@@ -347,6 +351,14 @@
                         font-size: 14px;
                         color: black;
                     }
+                    p{
+                        // display: inline-block;
+                        float: right;
+                        font-size: 14px;
+                    }
+                }
+                li:hover a{
+                    color: #ec4828;
                 }
             }
         }
@@ -653,6 +665,7 @@
                 display: flex;
 
                 li {
+                    position: relative;
                     width: 138px;
                     text-align: center;
                     line-height: 60px;
@@ -660,7 +673,18 @@
                     font-size: 17px;
                     font-weight: bold;
                     cursor: pointer;
-
+                    em {
+                        display: none;
+                        background: url(../images/sprite.png) no-repeat -305px 0;
+                        width: 81px;
+                        height: 11px;
+                        position: absolute;
+                        top: -5px;
+                        left: 32px;
+                    }
+                    .giftMark{
+                        display: block;
+                    }
                 }
 
                 .giftList {
@@ -951,6 +975,19 @@
                     color: #555555;
                     font-size: 17px;
                     font-weight: bold;
+                    position: relative;
+                    em {
+                        display: none;
+                        background: url(../images/sprite.png) no-repeat -305px 0;
+                        width: 81px;
+                        height: 11px;
+                        position: absolute;
+                        top: -15px;
+                        left: 32px;
+                    }
+                    .dataMark{
+                        display: block;
+                    }
                 }
 
                 .dataList {
